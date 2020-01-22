@@ -1,0 +1,56 @@
+scala> :javap -p Employee.class
+Compiled from "<console>"
+public class $line9.$read$$iw$$iw$Employee {
+  private java.lang.String name;
+  private final int id;
+  public java.lang.String name();
+  public void name_$eq(java.lang.String);
+  public int id();
+  public $line9.$read$$iw$$iw$Employee(java.lang.String, int);
+}
+
+scala> class Employee(name:String,id:Int)
+defined class Employee
+
+scala> val prasad = new  Employee("PRASAD",101)
+prasad: Employee = Employee@1ab28416
+
+scala> prasad.name
+<console>:13: error: value name is not a member of Employee
+       prasad.name
+              ^
+
+scala> prasad.id
+<console>:13: error: value id is not a member of Employee
+       prasad.id
+              ^
+
+scala> :javap -p Employee.class
+Compiled from "<console>"
+public class $line18.$read$$iw$$iw$Employee {
+  public $line18.$read$$iw$$iw$Employee(java.lang.String, int);
+}
+
+scala> class Employee(private var name:String, private val id:Int)
+defined class Employee
+
+scala> val prasad = new  Employee("PRASAD",101)
+prasad: Employee = Employee@58f97013
+
+scala> prasad.name
+<console>:13: error: variable name in class Employee cannot be accessed in Employee
+       prasad.name
+              ^
+
+scala> :javap -p Employee.class
+Compiled from "<console>"
+public class $line22.$read$$iw$$iw$Employee {
+  private java.lang.String name;
+  private final int id;
+  private java.lang.String name();
+  private void name_$eq(java.lang.String);
+  private int id();
+  public $line22.$read$$iw$$iw$Employee(java.lang.String, int);
+}
+
+scala>

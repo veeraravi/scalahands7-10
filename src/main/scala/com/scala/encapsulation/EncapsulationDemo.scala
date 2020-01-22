@@ -1,0 +1,48 @@
+package com.scala.encapsulation
+
+class TestPOJO(private var name:String,
+               private var id:String,
+               private var sal:Double){
+  def printDetails(): Unit ={
+
+  }
+}
+
+
+class Person( private var name:String,
+              val id:String,
+              var salary:Double){
+
+  /*def getName(): String ={
+    name
+  }
+def getId(): String ={
+  id
+}*/
+  def disp(): Unit ={
+    println("I am from disp in Person POJO")
+    println("name = "+name+" id = "+id+" salary = "+salary)
+
+  }
+}
+
+
+
+object EncapsulationDemo {
+  def main(args: Array[String]): Unit = {
+    val ravi:Person = new Person("VEERA","101",1000.00)
+    ravi.disp()
+    ravi.getClass().getName
+ //   ravi.getClass().
+
+//ravi.name = "VEERARAVI";
+
+    //println("Name using getter "+ravi.getName)
+    //ravi.id = ""
+
+    val x = new TestPOJO("Test","m101",100.00)
+  //  println(x.name)
+   // println(x.id)
+   // println(x.sal)
+  }
+}
