@@ -1,5 +1,7 @@
 package com.scala.functions
 
+import scala.annotation.tailrec
+
 object TailRecursionDemo {
   def main(args: Array[String]): Unit = {
     println(" ****** "+factorial(60000,BigInt(1)))
@@ -9,6 +11,7 @@ object TailRecursionDemo {
     else
       n * fact(n-1);
   }
+@tailrec
   def factorial(n:Int,input:BigInt):BigInt ={
            if(n <= 0) input
           else

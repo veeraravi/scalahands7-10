@@ -109,5 +109,120 @@ val dus = 10
     val setEmp = Set(ravi,veera)
 
     println("Emp "+setEmp)
+    /*
+    scala> val set1 = Set(1,2,3,4,5,6,7,8,5,9,10,6,1,2,4)
+set1: scala.collection.mutable.Set[Int] = Set(9, 1, 5, 2, 6, 3, 10, 7, 4, 8)
+
+scala> set1.head
+res17: Int = 9
+
+scala> val set1 = com.scala.collection.immutable.Set(1,2,3,4,5,6,7,8,5,9,10,6,1,2,4)
+<console>:14: error: object scala is not a member of package com
+       val set1 = com.scala.collection.immutable.Set(1,2,3,4,5,6,7,8,5,9,10,6,1,2,4)
+                      ^
+
+scala> val set1 = scala.collection.immutable.Set(1,2,3,4,5,6,7,8,5,9,10,6,1,2,4)
+set1: scala.collection.immutable.Set[Int] = Set(5, 10, 1, 6, 9, 2, 7, 3, 8, 4)
+
+scala> val nums = List(1,10.0d,100,100.00f,15.toByte,10.toShort,1025469874563215489l,null)
+nums: List[Any] = List(1, 10.0, 100, 100.0, 15, 10, 1025469874563215489, null)
+
+scala> val set1 = HashSet(1,2,3,4,5,6,7,8,5,9,10,6,1,2,4)
+set1: scala.collection.mutable.HashSet[Int] = Set(9, 1, 5, 2, 6, 3, 10, 7, 4, 8)
+
+scala> var s1 = Set(1,2,3,4,5,6,7,8)
+s1: scala.collection.mutable.Set[Int] = Set(1, 5, 2, 6, 3, 7, 4, 8)
+
+scala> s1.head
+head   headOption
+
+scala> s1.head
+res18: Int = 1
+
+scala> s1.tail
+res19: scala.collection.mutable.Set[Int] = Set(5, 2, 6, 3, 7, 4, 8)
+
+scala> s1.size
+size   sizeHint   sizeHintBounded
+
+scala> s1.size
+res20: Int = 8
+
+scala> s1.foreach(println)
+1
+5
+2
+6
+3
+7
+4
+8
+
+scala> s1.isEmpty
+res22: Boolean = false
+
+scala> s1.contains(8)
+res23: Boolean = true
+
+scala> s1.contains(9)
+res24: Boolean = false
+
+scala> s1+=9
+res25: scala.collection.mutable.Set[Int] = Set(9, 1, 5, 2, 6, 3, 7, 4, 8)
+
+scala> for(s <- s1){
+     | if(s > 0 && s%2==0)
+     |   println("EVEN "+s)
+     | else
+     |   println("ODD "+s)
+     | }
+ODD 9
+ODD 1
+ODD 5
+EVEN 2
+EVEN 6
+ODD 3
+ODD 7
+EVEN 4
+EVEN 8
+
+scala> var s2 = Set(10,20,30,40,50,60,70,80,90)
+s2: scala.collection.mutable.Set[Int] = Set(30, 60, 70, 20, 50, 90, 10, 40, 80)
+
+scala> s1.intersect(s2)
+res27: scala.collection.mutable.Set[Int] = Set()
+
+scala> val s3 = s1.union(s2)
+s3: scala.collection.mutable.Set[Int] = Set(30, 9, 60, 1, 2, 3, 90, 10, 4, 40, 70, 5, 20, 50, 6, 7, 8, 80)
+
+scala> s3.intersect(s1)
+res28: scala.collection.mutable.Set[Int] = Set(9, 1, 5, 2, 6, 3, 7, 4, 8)
+
+scala> s1.intersect(s3)
+res29: scala.collection.mutable.Set[Int] = Set(9, 1, 5, 2, 6, 3, 7, 4, 8)
+
+scala> s1
+res30: scala.collection.mutable.Set[Int] = Set(9, 1, 5, 2, 6, 3, 7, 4, 8)
+
+scala> s1.add(10)
+res31: Boolean = true
+
+scala> s1
+res32: scala.collection.mutable.Set[Int] = Set(9, 1, 5, 2, 6, 3, 10, 7, 4, 8)
+
+scala> s1.add(10)
+res33: Boolean = false
+
+scala> s1+=11
+res34: scala.collection.mutable.Set[Int] = Set(9, 1, 5, 2, 6, 3, 10, 7, 4, 11, 8)
+
+scala> s1+=11
+res35: scala.collection.mutable.Set[Int] = Set(9, 1, 5, 2, 6, 3, 10, 7, 4, 11, 8)
+
+scala> s1+=(12,15)
+res36: scala.collection.mutable.Set[Int] = Set(15, 12, 9, 1, 5, 2, 6, 3, 10, 7, 4, 11, 8)
+
+scala>
+     */
   }
 }

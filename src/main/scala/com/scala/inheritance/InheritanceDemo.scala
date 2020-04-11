@@ -1,21 +1,34 @@
 package com.scala.inheritance
 
 class Employee{
+
+  val sal = 1000.00d;
+  private var otherIncome = 500.00d
+
   def disp(){
     println("I am from disp in employee")
   }
-  var sal = 1000.00d;
-  private var otherIncome = 500.00d
+  def getSal():Double={
+    sal
+  }
 }
 class Developer extends Employee{
+
+  var bonus = 200;
+  // override val sal = 500.00d
+
   def prints(){
     println("Developer")
-    disp()
+    //disp()
   }
-  var bonus = 200;
  override def disp(){
-    println("I am from Developer")
+    println("I am from Developer"+super.getSal())
   }
+
+  override def getSal(): Double = {
+    super.getSal() + bonus
+  }
+
 override def toString(): String ={
 // println("sal= "+sal+" bonus= "+ bonus )
   "sal= "+sal+" bonus= "+ bonus
@@ -23,6 +36,8 @@ override def toString(): String ={
 
  // override def toString = s"Developer($bonus)"
 }
+
+
 
 class Tester extends Employee{
   def test(){
@@ -35,14 +50,24 @@ class Tester extends Employee{
 object InheritanceDemo {
   
   def main(args: Array[String]): Unit = {
+    println("**************EMPLOYEE**************")
+
+    var emp = new Employee()
+    println("EMP sal "+emp.sal)
+    emp.disp()
+    println(emp.getSal())
+
+    println("*************Developer***************")
     var dev = new Developer();
     println("DEV OBJ "+dev)
   dev.disp()
   println("Sal = "+dev.sal)
   dev.prints()
   println("Bonus "+dev.bonus)
-  //println("Other income  "+dev.otherIncome)
-println("****************************")
+  println("get sal  "+dev.getSal())
+
+
+    println("****************************")
     var dev2:Employee = new Developer();
     dev2.disp()
     println(dev2.sal)

@@ -8,5 +8,14 @@ object ObjectPerson2 {
   def main(args: Array[String]): Unit = {
     //val ravi = new ObjectPerson;
     println("Name "+name)
+
+    val t =  ObjTest
+    ObjTest.showable()
+  }
+}
+
+object ObjTest{
+  def showable(): Unit ={
+    println("I am from ObjTest object")
   }
 }

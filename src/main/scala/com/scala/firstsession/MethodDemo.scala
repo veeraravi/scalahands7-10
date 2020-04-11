@@ -10,6 +10,9 @@ object MethodDemo {
     //local variable
     val yourName = "NEERU";
    println("------------------------------------")
+   val nr =  notReturn()
+    println("NR "+nr)
+
     dispName()
    println("------------------------------------")
     val res = dispName()
@@ -36,16 +39,16 @@ println(y);
   }
   
   def dispName()={
-    println("I am SCALA, from Method which return nothing");
-    println(myName)
-  //  myName
+    /*println("I am SCALA, from Method which return nothing");
+    println(myName)*/
+   myName
   }
   
   def getSalary():Double={
    var sal = 1000.00;
     println(myName)
-   return sal;
- // sal
+ //  return sal;
+ sal
    
   }
   
@@ -57,6 +60,11 @@ println(y);
   }
   
  val addOne = (x:Int,y:Int) => x+y+1;
-  
+
+
+  def notReturn()={
+    println("I am from notReturn method")
+    "Returning String"
+  }
   
 }

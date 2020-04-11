@@ -36,7 +36,7 @@ println("====================1=================")
     println("================3=====================")
 
    
-    var ele:Any = 100;
+    var ele:Any = 100.0f;
 
     var typeMatchVar = ele match {
       case abhisek: Int => {
@@ -68,9 +68,9 @@ println("====================1=================")
       case (1, 1) => println("1,1")
       case _ => println("default")
     }
-
-    println(tupleMatch(2, 2))
-
+    println("================5.1=====================")
+   // println(tupleMatch(2, 2))
+    tupleMatch(2, 2)
     /*for(i <- 1 to 10;j <- 1 to 10){
       (i%2,j%3) match {
         case (0,0) => println("resut is "+ (i,j))

@@ -33,6 +33,7 @@ object PolymorphismTest {
     
     val d:Disp = new PolyPrintable()
     d.printable()
+     val d1:Disp = new polyShowable()
 
 
    // val s:PolyPrintable = new Disp()

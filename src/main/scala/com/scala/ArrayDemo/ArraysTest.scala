@@ -9,10 +9,25 @@ object ArraysTest {
     arr.foreach(println)
     
     val arrB = ArrayBuffer(1, 2, 20, 30, 20, 30, 20, 40, 50);
-    //arrB.con
+     arrB.reverse
     
     val l2 = List(0, 1, 2, 3, 4, 5, 6, 7, 8, 9);
-    
+ /*
+ scala> var arrB = ArrayBuffer[Int](1,2,3,4,5)
+arrB: scala.collection.mutable.ArrayBuffer[Int] = ArrayBuffer(1, 2, 3, 4, 5)
+
+scala> arrB += 6
+res3: scala.collection.mutable.ArrayBuffer[Int] = ArrayBuffer(1, 2, 3, 4, 5, 6)
+
+scala> val arrB = ArrayBuffer[Int](1,2,3,4,5)
+arrB: scala.collection.mutable.ArrayBuffer[Int] = ArrayBuffer(1, 2, 3, 4, 5)
+
+scala> arrB += 6
+res4: arrB.type = ArrayBuffer(1, 2, 3, 4, 5, 6)
+
+scala> arrB -= 6
+res5: arrB.type = ArrayBuffer(1, 2, 3, 4, 5)
+  */
     
     
     val listBuff = new ListBuffer[String]()

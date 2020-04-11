@@ -8,7 +8,8 @@ object NamedFunctionDemo {
     
     Print(a=1000,100);
 
-    Print(20,10)  //-- go as order, 20 will got 1st 10 will goto 2nd arg
+    Print(20,10)  //-- go as order, 20 will goto 1st
+                   // 10 will goto 2nd arg
     
   }
   

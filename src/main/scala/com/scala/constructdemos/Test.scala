@@ -2,8 +2,18 @@ package com.scala.constructdemos
 
 object Test {
   def main(args: Array[String]): Unit = {
+
+
+    var pcd = new primaryConstructorDemo();
+    var pcd1 = new primaryConstructorDemo("Veera");
+
+    println("==========Primary Constructor============ ")
     val obj = new primaryConstructorDemo("hadoop","spark");
-    obj.name();
+  // println(obj.name());
+    ///obj.
+
+
+
     println("==========Auxiliray Constructor============ ")
     
     val au0 = new AuxiliaryConstructorDemo();

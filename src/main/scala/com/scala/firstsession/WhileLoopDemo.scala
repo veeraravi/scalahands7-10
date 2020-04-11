@@ -21,13 +21,15 @@ object WhileLoopDemo {
     while(true){
       
     }*/
+
+    println("====== Do-while =====")
     var j =1;  
     
     
     do{
       j = j+1
       println(j)
-    }while(true)
+    }while(false)
     
 }
 }

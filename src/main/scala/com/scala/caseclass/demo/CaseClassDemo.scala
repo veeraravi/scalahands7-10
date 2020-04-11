@@ -13,15 +13,15 @@ case class Point(x:Int,y:Int){
   var this.x:Int = x;
   var this.y:Int = y;
   
-  def show()={
-    
+  def show(){
+    println("I am from show")
   }
 }
 
 class ClassPoint(x:Int,y:Int){
   var this.x:Int = x;
   var this.y:Int = y;
-  var p1=Point(100,200)
+ // var p1=Point(100,200)
 }
 
 private class CaseClassDemo{
@@ -34,13 +34,15 @@ private class CaseClassDemo{
 object CaseClassDemo {
   def main(args: Array[String]): Unit = {
     var p1 =  Point(1,2)
-   // p1.s
-    var p2 =  Point(1,2)
+    p1.show()
+    var p2 = Point(1,2)
     if(p1 == p2){
       println("CASE CLASS OBJ SAME")
     }
     else 
-      {println("CASE CLASS OBJ NOT SAME")}
+      {
+        println("CASE CLASS OBJ NOT SAME")
+      }
     
     println("Case Class P1 "+p1);
     
@@ -49,7 +51,8 @@ object CaseClassDemo {
     if(clasP1 == clasP2){
       println("CLASS OBJ SAME")
     }
-    else println("CLASS OBJ NOT SAME")
+    else
+      println("CLASS OBJ NOT SAME")
     
     println("Class p1 "+clasP1)
     

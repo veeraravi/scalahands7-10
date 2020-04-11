@@ -11,7 +11,7 @@ object ArrayDemo {
     println("4th position element "+arr(4))
     var revArr = arr.reverse
     for(x <- revArr){
-      println("element of arr "+x)
+      println("element of revArr "+x)
     }
 
     for(x <- arr){
@@ -19,7 +19,7 @@ object ArrayDemo {
     }
     arr.foreach(println)
   //  arr.
-
+println("=====================================")
     val arrx = new Array[String](5);
     arrx(3)="Vasavi"
     arrx.foreach(println)

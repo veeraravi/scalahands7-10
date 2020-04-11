@@ -12,6 +12,11 @@ object ConsCallDemo {
 
 
     val prasad = new AuxiliaryConstructorDemo("Prasad",26,1012103)
+    //prasad.name = "Veera Prasad";  // only getter
+    prasad.age = 27; //setter and getter
+    //prasad.roll=123456; // only getter
+    prasad.sal=1000; //setter and getter
+   // prasad.bonus=200; // only getter
 
 
   }

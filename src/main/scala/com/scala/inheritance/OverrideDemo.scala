@@ -2,7 +2,7 @@ package com.scala.inheritance
 
 class Parent{
   val sal = 1000;
-  
+
   def calTax():Double = {
     println("Calculating the tax in Parent")
     return (sal*12)/100; 
@@ -31,11 +31,22 @@ object OverrideDemo {
   def main(args: Array[String]): Unit = {
     val parent:Parent = new Parent;
     val child:Child = new Child;
-    parent.calTax();
-   child.calTax();
+   println("Parent tax"+ parent.calTax());
+   println("Child's tax" +child.calTax());
     
-    println("chails's sal "+child.sal)
+    println("child's sal "+child.sal)
     println("parent's sal "+parent.sal)
+
+    println("================================")
+
+   // val ch:Child = new Parent()
+    val pnt:Parent = new Child()
+    println("pnt's sal "+pnt.sal)
+    println("pnt's tax" +pnt.calTax());
+
+
+
+
 
  //   println("get Parent sal from child "+child.getParentSal())
 

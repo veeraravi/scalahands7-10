@@ -15,6 +15,8 @@ object PrivateAccessDemo {
   def main(args: Array[String]): Unit = {
     val pp = new PrivateParent
   //  println("age = "+pp.age)
-    println("Get age "+pp.getAge())
+    println("before setting Get the age "+pp.getAge())
+    pp.setAge(36)
+    println("after setting Get the age "+pp.getAge())
   }
 }

@@ -51,6 +51,45 @@ println("********** FOR EACH ******")
       }
     capitals.filterKeys(ele => ele == "AP")
     println("********** ADD/Delete elements ******")
+
+   // val hashTable = scala.collection.mutable.HashTable("AP" -> "AMARAVATHI","TS" -> "HYDERABAD")
+
+    val sMap = scala.collection.SortedMap("AP" -> "AMARAVATHI","TS" -> "HYDERABAD","MH" ->"MUMBAI",
+      "KA" ->"MYSORE","AP" -> "HYDERABAD" )
+
+
+    val tMap = scala.collection.immutable.TreeMap("AP" -> "AMARAVATHI","TS" -> "HYDERABAD","MH" ->"MUMBAI",
+      "KA" ->"MYSORE","AP" -> "HYDERABAD" )
+// linkedHashMap is available in only mutable package
+    // it maintian insertion order
+
+    val lhMap = scala.collection.mutable.LinkedHashMap("AP" -> "AMARAVATHI","TS" -> "HYDERABAD","MH" ->"MUMBAI",
+      "KA" ->"MYSORE","AP" -> "HYDERABAD")
+
+    // ListMap equalant to LinkedHashMap with opposite insertion order in mutable package
+    // and it is insertion order in immutable packages
+
+    //val lmap = scala.collection.immutable.ListMap("AP" -> "AMARAVATHI","TS" -> "HYDERABAD","MH" ->"MUMBAI","KA" ->"MYSORE")
+    /*
+    scala> val lmap = scala.collection.mutable.ListMap("AP" -> "AMARAVATHI")
+    lmap: scala.collection.mutable.ListMap[String,String] = Map(AP -> AMARAVATHI)
+
+    scala> lmap+=("TS" -> "HYDERABAD")
+    res0: lmap.type = Map(TS -> HYDERABAD, AP -> AMARAVATHI)
+
+    scala> lmap+=("MH" -> "Mumbai")
+    res1: lmap.type = Map(MH -> Mumbai, AP -> AMARAVATHI, TS -> HYDERABAD)
+
+    scala> lmap+=("KA" -> "MYSORE")
+    res2: lmap.type = Map(KA -> MYSORE, TS -> HYDERABAD, AP -> AMARAVATHI, MH -> Mumbai)
+*/
+
+
+
+
+
+
+
     /*
     scala> pairMap+=("A"->"APPLE")
 
@@ -58,7 +97,8 @@ scala> pairMap
    var pairMap: scala.collection.immutable.Map[String,String]
 
 scala> pairMap
-res32: scala.collection.immutable.Map[String,String] = Map(MH -> MUMBAI, A -> APPLE, KA -> MYSORE, AP -> AMARAVATHI, TS -> HYD)
+res32: scala.collection.immutable.Map[String,String] =
+var pairMap = Map("MH" -> "MUMBAI", "A" -> "APPLE", "KA" -> "MYSORE", "AP" -> "AMARAVATHI", "TS" -> "HYD")
 
 scala> pairMap+=Map("A"->"APPLE","B"->"BALL")
 <console>:13: error: value += is not a member of scala.collection.immutable.Map[String,String]

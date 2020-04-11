@@ -4,27 +4,29 @@ abstract class Writer{
       def write(msg:String)
      // val name;
       }
+
 class StringWriter extends Writer{
-            val target = new StringBuffer
-            def write(msg:String)={
-              println("I am from string writer")
-            target.append(msg)
-            }
-            override def toString() = target.toString()
+      val target = new StringBuffer
+     def write(msg:String)={
+        println("I am from string writer")
+      target.append(msg)
+      }
+      override def toString() = target.toString()
             }
 
-class FileWriter2 extends Writer{
+/*class FileWriter2 extends Writer{
   def write(test:String){
     
   }
-}
+}*/
+
 trait profanityFilter extends Writer{
  // val name:Int;
-                 abstract override def write(msg:String)={
-                 println(" PROFANITY "+msg) 
-                 super.write(msg.toLowerCase.replace("stupid","st****"))
-                 }
-                 }
+         abstract override def write(msg:String)={
+         println(" called PROFANITY with message "+msg)
+         super.write(msg.toLowerCase.replace("stupid","st****"))
+         }
+         }
 
  trait UpperCaseFilter extends Writer{
             abstract override def write(msg:String)={
@@ -38,7 +40,8 @@ trait profanityFilter extends Writer{
  
  
 object TraitChainingDemo {
-  
+
+  // factory which take child type object
   def writeStuff(writeVariable:Writer)={
             writeVariable.write("this is stupid")
             println(writeVariable)
@@ -47,10 +50,10 @@ object TraitChainingDemo {
     
     
     val test:Writer = new StringWriter();
-   val filetest:Writer = new FileWriter2();
+  // val filetest:Writer = new FileWriter2();
     
     
-    val str = new StringWriter();
+    val str:StringWriter = new StringWriter();
     writeStuff(str)
     
     println("========================")

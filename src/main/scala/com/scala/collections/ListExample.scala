@@ -9,6 +9,7 @@ object ListExample {
     val list3 = List.fill(4)(1) //fills a list with an element which is mentioned 2nd arg
                                 //1 arg is no of times
     val list4 = List.range(1,20,2)
+    var list6 = List.tabulate(5)(ele => ele * ele)
 
     println("List0 "+list0)
     println("List1 "+list1)
@@ -30,6 +31,7 @@ val listOfList = List(list0,list2,list4)
     println("distinct without flatten List of lists  "+listOfList.distinct)
     println("distinct with flatten List of lists  "+listOfList.flatten.distinct)
   //  println("flatten list4  "+list4.flatten)
+
 
 
     list0.foreach(println)
@@ -180,6 +182,7 @@ scala> val nums = List(1,100,15.toByte,10.toShort,1025469874563215489l,Nothing)
     println("Filter from list >2 "+list2.filter(ele => ele >2))
     println("Filter from list >2 "+list2.filter(_>2))
     var list5 = List(1,2,3,4,5)
+
     val lB = scala.collection.mutable.ListBuffer(1,2,3,4,5,6,7,8,9,10)
     println("List buffer "+lB)
     lB.remove(9)

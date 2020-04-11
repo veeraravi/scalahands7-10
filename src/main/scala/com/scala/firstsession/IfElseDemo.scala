@@ -1,9 +1,14 @@
 package com.scala.firstsession
 
+
+class Employee{
+
+}
 object IfElseDemo {
  def main(args: Array[String]){
    
-  var age = readInt();
+  //var age = readInt();
+   var age = 24;
   
   if(age >= 18){
     println("Go for vote")
@@ -12,9 +17,6 @@ object IfElseDemo {
   }
    
   println("----------------------------")
-   
- 
-   
    
    
    var number:Int = 65  

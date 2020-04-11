@@ -1,8 +1,19 @@
 package com.scala.encapsulation
 
+class SettersGetters{
+  private var name1:String = "";
+  private var id1:String=""
+  private var sal1:Double=0.0d;
+
+
+}
+
+
+
 class TestPOJO(private var name:String,
                private var id:String,
                private var sal:Double){
+
   def printDetails(): Unit ={
 
   }
@@ -40,7 +51,9 @@ object EncapsulationDemo {
     //println("Name using getter "+ravi.getName)
     //ravi.id = ""
 
-    val x = new TestPOJO("Test","m101",100.00)
+    var x = new TestPOJO("Test","m101",100.00)
+
+   //x.id
   //  println(x.name)
    // println(x.id)
    // println(x.sal)

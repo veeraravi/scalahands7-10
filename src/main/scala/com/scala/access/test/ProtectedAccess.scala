@@ -1,5 +1,6 @@
 package com.scala.access.test
 
+
 class ProtectedAccess {
   protected val name = "Protected SCALA"
   protected val age = 12
@@ -13,7 +14,7 @@ class ProtectedAccess {
 object  ProtectedTest{
   def main(args: Array[String]): Unit = {
     val x = new ProtectedAccess
-   // println(x.name)
+    //println(x.name)
    // println(x.age)
   }
 }

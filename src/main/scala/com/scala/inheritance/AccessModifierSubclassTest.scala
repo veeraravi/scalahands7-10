@@ -5,7 +5,7 @@ import com.scala.access.test.ProtectedAccess
 
 class Nomodifier extends PublicAccess{
   def testDisp(): Unit ={
-  //  val pa = new PublicAccess()
+  //val pa = new PublicAccess()
     println(name)
     println(age)
     disp()

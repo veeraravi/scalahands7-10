@@ -14,7 +14,11 @@ object TupleDemo {
     
     val tuple  = ("RAVI",32,"MCA",1000.50)
 
-   val tuple22  = ("RAVI",32,"MCA",1000.50,"RAVI",32,"MCA",1000.50,"RAVI",32,"MCA",1000.50,"RAVI",32,"MCA",1000.50,"RAVI",32,"MCA",1000.50,"RAVI",32)
+   val tuple22  = ("RAVI",32,"MCA",1000.50,
+                   "RAVI",32,"MCA",1000.50,
+                   "RAVI",32,"MCA",1000.50,
+                   "RAVI",32,"MCA",1000.50,
+                   "RAVI",32,"MCA",1000.50,"RAVI",32)
 
 
     val (name,age,quli,sal) = tuple

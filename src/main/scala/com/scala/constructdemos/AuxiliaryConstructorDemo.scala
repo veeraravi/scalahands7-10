@@ -1,7 +1,8 @@
 package com.scala.constructdemos
 
-class AuxiliaryConstructorDemo(val name:String,val age:Int,val roll:Int){
-  
+class AuxiliaryConstructorDemo(val name:String,var age:Int,val roll:Int){
+  var sal = 1000;
+  val bonus = 150;
   println("I am from primary Constructor")
   println("Name : "+name)
    println("Age : "+age)
