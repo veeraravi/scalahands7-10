@@ -1,16 +1,18 @@
 package com.scala.firstclass
 
 object FirstScala {
-  var x = 10;
+  var x:Int = 10;
   val y =20;
-  
+
+
+
   def add(x:Int,y:Int):Int= {
-   // x = 100;
+    // x = 100;
     x+y;
   }
-  
-   def printl(x:Int,y:Int)= {
-   // x = 100;
+
+  def printl(x:Int,y:Int)= {
+    // x = 100;
     x+y;
     println("WELCOME TO SCALA")
   }

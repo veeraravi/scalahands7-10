@@ -3,6 +3,7 @@ package com.scala.collections
 object MapExample {
   def main(args: Array[String]): Unit = {
 
+
     val capitals = Map("AP" -> "AMARAVATHI","TS" -> "HYDERABAD","MH" ->"MUMBAI",
                        "KA" ->"MYSORE","AP" -> "HYDERABAD" )
     println("MAP "+capitals)

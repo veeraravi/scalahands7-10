@@ -1,7 +1,7 @@
 package com.scala.abstractdemo
 
 trait Printable{
-  def printThis
+  def printThis // abstract
   def disp2(): Unit ={
     println("printthis")
   }
@@ -10,7 +10,7 @@ trait t1{
   def disp()
 }
 
-trait t2 extends t1{
+trait t2 extends t1 {
   def disp2(): Unit ={
     println("t2")
   }
@@ -21,6 +21,7 @@ trait t2 extends t1{
 }
 
 class Demo extends Printable with t2{
+  //override val name = ""
  override def printThis(){ // this is from Printable
     println("printThis")
   }

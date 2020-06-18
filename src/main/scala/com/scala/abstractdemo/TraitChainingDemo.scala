@@ -1,16 +1,19 @@
 package com.scala.abstractdemo
 
 abstract class Writer{
-      def write(msg:String)
+      def write(msg:String) // abstract method
      // val name;
       }
-
+abstract class Read{
+  def write(msg:String) // abstract method
+  // val name;
+}
 class StringWriter extends Writer{
       val target = new StringBuffer
-     def write(msg:String)={
-        println("I am from string writer")
-      target.append(msg)
-      }
+  def write(msg:String)={
+    println("I am from string writer")
+    target.append(msg)
+  }
       override def toString() = target.toString()
             }
 

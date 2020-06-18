@@ -4,6 +4,7 @@ object ListExample {
   def main(args: Array[String]): Unit = {
 
     val list0 = 1::2::3::4::5::Nil
+    list0.init
     val list1 = List(1,2,3,5,6,7)
     val list2 = List.range(1,20)
     val list3 = List.fill(4)(1) //fills a list with an element which is mentioned 2nd arg
@@ -101,7 +102,11 @@ name: List[String] = List(HDFS, SCALA, JAVA, SPARK, KAFKA, HIVE, MAPREDUCE, VEER
 
 scala> name = name ::: List("VEERA","RAVI")
 name: List[String] = List(HDFS, SCALA, JAVA, SPARK, KAFKA, HIVE, MAPREDUCE, VEERA, VEERA, VEERA, RAVI)
+scala> List(1,2,3) ::: List(4,5,6)
+res18: List[Int] = List(1, 2, 3, 4, 5, 6)
 
+scala> List(4,5,6).:::(List(1,2,3))
+res0: List[Int] = List(1, 2, 3, 4, 5, 6)
       * */
 
 println("*************************Converting List to string ******************")

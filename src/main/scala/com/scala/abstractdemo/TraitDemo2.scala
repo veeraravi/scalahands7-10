@@ -1,6 +1,6 @@
 package com.scala.abstractdemo
 
-trait Friend{
+sealed  trait Friend{
   val name : String;
   def listen(){
     println("I am "+ name + " listing")

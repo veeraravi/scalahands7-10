@@ -9,12 +9,12 @@ def main(args: Array[String]): Unit = {
   catch{
     case t: Throwable => println("Not eligible for vote");
   }
-  // validateAge(13)
-  println("After the call validate age");
+ //  validateAge(13)
+  println("After the call to validate age method");
 }
 
 def validateAge(age:Int):Boolean ={
-//  try{
+  //try{
   if(age < 18){
     throw new ArithmeticException()
    // return false;
@@ -29,12 +29,12 @@ def validateAge(age:Int):Boolean ={
     
  // }
   
-  println("");
-  println("");
-  println("");
-  println("");
-  println("");
-  println("");
+  println("---------");
+  println("------------");
+  println("--------------");
+  println("-----------------");
+  println("---------------------");
+  println("-------------------------");
   
   return true;  
 }

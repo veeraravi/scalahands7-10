@@ -3,8 +3,6 @@ package com.scala.exception.session
 import java.io.FileNotFoundException
 import java.sql.SQLDataException
 
-import com.scala.polymorphism.Veeraravi
-
 class ExceptionExample{
   //without exception handling
   def divide(a:Int, b:Int) = {
@@ -54,16 +52,19 @@ class ExceptionExample{
 
 }
 object MainObjectException {
-  def main(args:Array[String]){
+  def main(args:Array[String]) {
     var e = new ExceptionExample()
-  //  e.divide(100,0)
+  // e.divide(100,0)
    // e.divideWithTryCatch(10,10)
    // e.validate(13)
- /*  try{
+/*   try{
      e.validate(13)
    }catch {
     case x:Exception => println(x)
    }*/
+
+   // e.validateThrows()
+
     try {
       e.validateThrows()
     }

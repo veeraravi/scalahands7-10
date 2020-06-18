@@ -1,7 +1,8 @@
 package com.scala.abstractdemo
 
 trait Prints{
-  def printable():Unit
+  def printable():Unit // abstract method
+ //non-abstract or concret
   def disp(){
     println("I am disp method from Prints Trait")
   }
@@ -12,9 +13,9 @@ trait Shows{
 
 class TraitTests extends Prints with Shows{
  // Members declared in com.scala.abstractdemo.Prints
-override  def printable(): Unit ={
-  println("I am from print trait")
-}
+ override  def printable(): Unit ={
+   println("I am from print trait")
+ }
   
   // Members declared in com.scala.abstractdemo.Shows
  override def showable(): Unit = {
