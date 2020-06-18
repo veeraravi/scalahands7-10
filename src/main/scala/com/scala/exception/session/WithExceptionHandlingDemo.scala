@@ -11,7 +11,10 @@ object WithExceptionHandlingDemo {
      var res = 100/x; //
      
     }catch {
-
+      case ravi:Exception => {
+        ravi.printStackTrace()
+        ravi.getCause()
+      }
       case x: NullPointerException =>{ println("Nullpointer");
         /*x.getCause()
         x.getMessage()
@@ -24,10 +27,7 @@ object WithExceptionHandlingDemo {
          println(a.getStackTrace())*/
       }
       // case t: Throwable => println("Dividing is not possibl wth 0");
-      case ravi:Exception => {
-        ravi.printStackTrace()
-        ravi.getCause()
-      }
+
     }
     finally {
       println("Hi Scala, i am from finally");
