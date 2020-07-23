@@ -8,7 +8,7 @@ object BreakDemo {
     println("I am from main")
     
     breakable{
-      for(i <- 1 to 5){
+      for(i <- 1 to 10){
         println("I value "+ i)
         if(i%2 == 0){
           break;

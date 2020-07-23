@@ -26,7 +26,7 @@ class DynamicPen(name:String,typeOfPen:String,size:Int,color:String){
 object ClassAndObjectDemo {
   def main(args: Array[String]): Unit = {
 
-    var celloPen = new Pen
+    var celloPen:Pen = new Pen
     println(celloPen.name)
     println(celloPen.typeOfPen)
     println(celloPen.color)

@@ -18,9 +18,19 @@ public class TryCatchDemo {
                 }
             }
 
+        }catch (NullPointerException ne){
+
+        }
+        catch (ArithmeticException ae){
+
+        }
+        catch (NumberFormatException nue){
+
         }catch (Exception e){
 
-        }finally {
+        }
+
+        finally {
             try{
 
             }catch (Exception e){

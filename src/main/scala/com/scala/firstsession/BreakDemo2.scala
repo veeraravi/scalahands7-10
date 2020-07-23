@@ -6,9 +6,7 @@ object BreakDemo2 {
   def main(args: Array[String]): Unit = {
     val inner = new Breaks
     val outer = new Breaks
-    
-    
-    
+
     outer.breakable{
       for(i <- 1 to 3){        
         inner.breakable{

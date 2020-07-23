@@ -5,12 +5,14 @@ object RecursiveFunction {
  /*for (i <- 1 to 10)
  println( "Factorial of " + i + ": = " + factorial(i) )*/
     
-    println( "Factorial of 4: = " +factorial(4))
+    println( "Factorial of 4: = " +factorial(1))
  }
 
  def factorial(n: BigInt): BigInt = { 
- if(n == 1)
-   return 1
+
+   //base condition
+   /*if(n == 1)
+   return 1*/
    var x:BigInt =0;
  //    println("X value before rec "+x)
  x = n * factorial(n - 1)

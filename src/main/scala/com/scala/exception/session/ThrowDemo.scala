@@ -9,14 +9,14 @@ def main(args: Array[String]): Unit = {
   catch{
     case t: Throwable => println("Not eligible for vote");
   }
- //  validateAge(13)
+ // validateAge(13)
   println("After the call to validate age method");
 }
 
 def validateAge(age:Int):Boolean ={
   //try{
   if(age < 18){
-    throw new ArithmeticException()
+    throw new ArithmeticException(" Exception occured due to age < 18")
    // return false;
   }
   else{

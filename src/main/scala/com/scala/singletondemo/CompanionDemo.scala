@@ -11,12 +11,20 @@ class CompanionDemo{
     println("Sal "+sal+" name "+name)
   }
   def apply(){
-    
+    CompanionDemo.readFile()
+    CompanionDemo.path
   }
 }
 
 
 object CompanionDemo {
+
+ private def readFile(): Unit ={
+
+  }
+  private var path = "/home/u1011/invoice/20120120.csv";
+
+
   def main(args: Array[String]): Unit = {
    val comp = new CompanionDemo
    println(comp.id)
@@ -24,5 +32,7 @@ object CompanionDemo {
    println(comp.sal)
    println(comp.disp())
    println(comp.getSal())
+
+    //val comp2 = List()
   }
 }

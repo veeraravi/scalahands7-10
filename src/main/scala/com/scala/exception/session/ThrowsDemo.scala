@@ -10,8 +10,8 @@ object ThrowsDemo {
   catch{
     case t: Throwable => println("Not eligible for vote");
   }
-  /*var isEligible = validateAge(17)
-  println(isEligible)*/
+//  var isEligible = validateAge(17)
+//  println(isEligible)
   println("After the call validate age");
   }
     

@@ -10,9 +10,9 @@ class SettersGetters{
 
 
 
-class TestPOJO(private var name:String,
-               private var id:String,
-               private var sal:Double){
+class TestPOJO(protected var name:String,
+                var id:String,
+                var sal:Double){
 
   def printDetails(): Unit ={
 

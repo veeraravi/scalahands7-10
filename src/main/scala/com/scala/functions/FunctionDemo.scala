@@ -4,6 +4,7 @@ object FunctionDemo {
   
   def main(args:Array[String]):Unit = {
 
+    var name:String = "";
     printNames()
 
     println("*************************")
@@ -11,15 +12,14 @@ object FunctionDemo {
     println("Sum of 10,20 is "+sum)
 
     println("************* sum ************")
-    
+
+    val sum2 = add2(20,30)
+    println("sum2 "+sum2)
     println(add2(100,200));
     
     println(returnSum(50,30))
     
     println(" add3 without  equal "+add3(10,20));
-
-
-
     
     println("ImmutableTest "+immutableTest(100, 20));
     
@@ -29,7 +29,7 @@ object FunctionDemo {
 
     println("Default parameters 2 "+defaultValue(100,200));
     
-    println("Named parameters 2 "+namedParameters(1,2));
+    println("Named parameters 1 "+namedParameters(1,2));
     
     println("Named parameters 2 "+namedParameters(b=1,a=2));
   }
@@ -56,7 +56,8 @@ object FunctionDemo {
    // println("Add2 "+(x+y)) //
   }
   
-  // when you are using return keyword, we need to specify the return value type
+  // when you are using return keyword,
+  // we need to specify the return value type
   def returnTest(x:Int):Int={
     return 10;
   }
@@ -79,13 +80,14 @@ object FunctionDemo {
       but i am not returning anything, so its an exception        
       
    */
-  
-  
+
+  // i want return an expression,
+  // i have to use = symbol in declaration
   def add3(x:Int,y:Int)
   {
    val sum =  (x+y)
    println("Add3 "+sum);
-   //sum // i want return an expression, i have to use = symbol in declaration
+  // sum
   }
   
   def immutableTest(x:Int,y:Int) =
@@ -105,7 +107,7 @@ object FunctionDemo {
   }
   
   //Named parameters
-   def namedParameters(a:Int=10,b:Int=10):Int = {
+   def namedParameters(a:Int,b:Int):Int = {
      println("a value "+a);
      println("b Value "+b);
     a+b;

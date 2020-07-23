@@ -37,7 +37,7 @@ object AbstractBasicExample {
     val ref:Bike = new KTM
     ref.disp()
 
-    //val b = new Bike
+  // val b = new Bike
 
 
 

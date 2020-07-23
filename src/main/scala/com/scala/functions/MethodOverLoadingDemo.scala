@@ -9,9 +9,9 @@ object MethodOverLoadingDemo {
 
   /*
   * method name should be same and the below should change
-  * no of rgs
+  * no of args
   * type of args
-  * order of args type
+  * order of args data type
   * */
 
 
@@ -19,6 +19,8 @@ object MethodOverLoadingDemo {
     println("I am in addNumber Method INT INT")
     return (arg1+arg2)
   }
+
+
   def addNumbers(arg1:Int):Int={
     println("I am in addNumber Method INT INT")
     return (arg1+100)
@@ -36,6 +38,16 @@ object MethodOverLoadingDemo {
     println("I am in addNumber Method INT INT")
     return (arg1+arg2).toInt
   }
+
+// order of arg data type
+  def addNumbers(ele1:Double,ele2:Int):Int ={
+    println("I am in addNumber Method INT INT")
+    return (ele1+ele2).toInt
+  }
+
+
+
+
   
    def addNumbers(arg1:Int,arg2:Float)={
     println("I am in addNumber Method Int Float")

@@ -5,10 +5,11 @@ object StringDemo {
     var name: String = "SCALA";
 
    name = name.concat(" veera")
-
+println(name)
    val sub =  name.substring(5,10)
 
     name = name.toUpperCase().concat("VEERA")
+
     var x = 100;
 
     var y = "sdfsadf sdf asdf asdg " +
@@ -17,6 +18,7 @@ object StringDemo {
     var y1 = """sdfsadf sdf asdf asdg
       asdg asdg asdg asdgadgasdvasds
       fsadgasdg asg sdgasdgasgd"""
+
     println("y "+y)
     println("y1 "+y1)
 
@@ -33,7 +35,11 @@ It is object oriented and functional programming"""
     var stringVar = "Hello, Scala!"
     
     println(" this is string with values "+x+floatVar+intVar)
-    
+
+
+    println("The value of the float variable is " +floatVar +
+      " while the value of the integer " +
+      "variable is"+intVar+ " and the string "+ stringVar)
     
     
     var fs = printf("The value of the float variable is " +

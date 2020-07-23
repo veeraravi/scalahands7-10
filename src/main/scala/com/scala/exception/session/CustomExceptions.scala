@@ -9,7 +9,7 @@ object CustomExceptions {
   
   def main(args: Array[String]): Unit = {
     try{
-    var amt = test(50)
+    var amt = test(150)
     println("result "+amt);
     }
     catch{

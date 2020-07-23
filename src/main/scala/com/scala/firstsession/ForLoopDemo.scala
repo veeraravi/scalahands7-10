@@ -3,6 +3,9 @@ package com.scala.firstsession
 object ForLoopDemo {
   var name:String = "SCALA";
   def main(args: Array[String]): Unit = {
+    /*for(initialize;condition;incr/decr){
+
+    }*/
     println("++++++++++++++++++++++++++++++++")
     for(x <- 1 to 10){
       println("X value "+x)
@@ -54,10 +57,10 @@ object ForLoopDemo {
     
     
     for(x <- 1 to 5){
-      println("X Value "+x)
+      println("outer loop X Value "+x)
       println("=================")
       for(y <- 10 to 15){
-        println(" Y value "+y);
+        println(" inner loop Y value "+y);
       }
     }
       

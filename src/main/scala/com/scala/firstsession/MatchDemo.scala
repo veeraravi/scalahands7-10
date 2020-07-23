@@ -14,6 +14,7 @@ println("====================1=================")
 
 
     var fruit:Any = "apple";
+
     fruit match {
       case "apple" => {
                         println("APPLE")

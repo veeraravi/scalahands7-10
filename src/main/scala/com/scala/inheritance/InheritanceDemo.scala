@@ -3,7 +3,7 @@ package com.scala.inheritance
 class Employee{
 
   val sal = 1000.00d;
-  private var otherIncome = 500.00d
+  var otherIncome = 500.00d
 
   def disp(){
     println("I am from disp in employee")
@@ -22,16 +22,16 @@ class Developer extends Employee{
     //disp()
   }
  override def disp(){
-    println("I am from Developer"+super.getSal())
+    println("I am from Developer  and sal is "+super.getSal())
   }
 
   override def getSal(): Double = {
-    super.getSal() + bonus
+    super.getSal() + bonus + otherIncome
   }
 
 override def toString(): String ={
 // println("sal= "+sal+" bonus= "+ bonus )
-  "sal= "+sal+" bonus= "+ bonus
+  "sal= "+sal+" bonus= "+ bonus + "other Income= "+otherIncome
 }
 
  // override def toString = s"Developer($bonus)"
@@ -57,6 +57,7 @@ object InheritanceDemo {
     emp.disp()
     println(emp.getSal())
 
+
     println("*************Developer***************")
     var dev = new Developer();
     println("DEV OBJ "+dev)
@@ -66,14 +67,15 @@ object InheritanceDemo {
   println("Bonus "+dev.bonus)
   println("get sal  "+dev.getSal())
 
-
     println("****************************")
-    var dev2:Employee = new Developer();
-    dev2.disp()
-    println(dev2.sal)
+  var dev2:Employee = new Developer();
+  dev2.disp() // its calling child method
+  println(dev2.sal)
+ // println(dev2.bonus)
+  println(dev2.getSal())// its also from child
 
-//val child:Developer = new Employee();
-  //  val name = new String("Scala")
+/*val child:Developer = new Employee();
+   val name = new String("Scala")*/
     println("************tester****************")
     val tester = new Tester
     tester.disp()

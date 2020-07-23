@@ -11,7 +11,7 @@ object BreakInnerLoopDemo {
       breakable{
         for(j <- 1 to 3){
           if(i == 3 && j == 2) break;
-          println("Inner Loop i = "+i+" j = "+j)
+          println("Inner Loop --> i value from outer = "+i+" j value from inner = "+j)
         }
       
     }

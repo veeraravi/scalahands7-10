@@ -1,5 +1,7 @@
 package com.scala.inheritance
-
+/*
+*  A <-- B <-- C
+* */
 class ClassA
 {
   val name="Scala"

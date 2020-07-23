@@ -13,6 +13,7 @@ object ArraysTest {
     
     val l2 = List(0, 1, 2, 3, 4, 5, 6, 7, 8, 9);
  /*
+  array is fixed in size where arrayBuffer is resizable
  scala> var arrB = ArrayBuffer[Int](1,2,3,4,5)
 arrB: scala.collection.mutable.ArrayBuffer[Int] = ArrayBuffer(1, 2, 3, 4, 5)
 

@@ -15,6 +15,10 @@ object CopyConsDemo {
   def main(args: Array[String]): Unit = {
     val sc = new StudentCopy("Ravi",101,1000.0d)
     val r = new StudentCopy(sc)
+    println(r.id)
+    println(r.name)
+    println(r.sal)
+
     
   }
 }

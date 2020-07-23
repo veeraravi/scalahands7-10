@@ -15,11 +15,11 @@ object IF_ELSE_StudentGrade {
       total = maths+phy+che
       per = (total/300)* 100
 
-      if(per > 75){
+      /*if(per > 75){
 
       }else if(per > 60 && per < 75){
 
-      }else if()
+      }else if()*/
 
 
     }else{

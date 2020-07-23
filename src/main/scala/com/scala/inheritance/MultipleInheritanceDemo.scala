@@ -1,5 +1,16 @@
 package com.scala.inheritance
 
+/*
+Multiple is not possible using classes
+*  A <-- C
+*  B <-- C
+*  hybrid
+*  A <-- B
+*  A <-- C
+*  B <-- D
+*  C <-- D
+* */
+
 class ParentA
 {
   def getTax(){
