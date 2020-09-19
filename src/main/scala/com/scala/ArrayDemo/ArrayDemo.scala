@@ -8,7 +8,8 @@ object ArrayDemo {
     var a1:Array[Int] = Array(10,20,30,40,50)
     var a2:Array[Int] = new Array(5)
     var a3:Array[Int] = new Array[Int](10)
-
+a3(0)=6;
+    println("======"+a3(0))
     //arr.
 
     println("Length of array "+arr.length)

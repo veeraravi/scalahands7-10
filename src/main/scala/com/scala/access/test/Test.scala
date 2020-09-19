@@ -56,5 +56,29 @@ object Test {
 
     val ps = new ProtectedSub
    // println(ps.)
+    println("===="+fibonacci(4))
+    fibonacci(4).foreach(println)
   }
+  def fibonacci(n: Int): Array[Int] = {
+    var res:Array[Int] = new Array[Int](n)
+    var sum:Int = 0
+    var a:Int = 0
+    var b:Int = 1
+    if(n < 2){
+      res(0) = 0
+    }
+    else{
+      for(i <- 1 to n-1)
+      {
+        res(0)= 0
+        sum = a+b
+        a = b
+        b=a
+        res(i) = sum
+
+      }
+
+  }
+    res
+}
 }

@@ -4,7 +4,7 @@ object ListExample {
   def main(args: Array[String]): Unit = {
 
     val list0 = 1::2::3::4::5::Nil
-    list0.init
+  //  list0.init
     val list1 = List(1,2,3,5,6,7)
     val list2 = List.range(1,20)
     val list3 = List.fill(4)(1) //fills a list with an element which is mentioned 2nd arg
@@ -12,11 +12,12 @@ object ListExample {
     val list4 = List.range(1,20,2)
     var list6 = List.tabulate(5)(ele => ele * ele)
 
+    val list7:List[Int] = List(1,4,3,6,7,9,10,7)
+
     println("List0 "+list0)
     println("List1 "+list1)
     println("List2 "+list2)
     println("List3 "+list3)
-
 
     println("List1 0 postion  "+list1(0))
     println("List2 15 position "+list2(15))
@@ -46,9 +47,9 @@ println("****************")
       println(nameIt.next())
     }
 
-
     println("************ ADD elements to List ***************")
-val name = List("SCALA","JAVA","SPARK","KAFKA","HIVE","MAPREDUCE")
+
+  val name = List("SCALA","JAVA","SPARK","KAFKA","HIVE","MAPREDUCE")
     println("flatten names  "+name.flatten)
     println("map func names  "+name.map(ele => ele.toLowerCase))
     println("flatmap names  "+name.flatMap(ele => ele.toLowerCase))
@@ -142,7 +143,7 @@ println("*************************Converting List to string ******************")
     scala> name.mkString("[",",","]")
 res12: String = [HDFS,SCALA,JAVA,SPARK,KAFKA,HIVE,MAPREDUCE,VEERA,VEERA,VEERA,RAVI]
 
-scala> val colors = List("blue", "yellow", "red")
+  scala> val colors = List("blue", "yellow", "red")
 colors: List[String] = List(blue, yellow, red)
 
 scala> val result = colors.toArray
@@ -200,5 +201,33 @@ scala> val nums = List(1,100,15.toByte,10.toShort,1025469874563215489l,Nothing)
     val rem = List(7,8,9)
     lB --= rem
     println("Afer remove List(7,8,9) List buffer "+lB)
+
+    println("*************Higher Order Functions***************************")
+
+    val list8 = list4:::list2;
+
+    println(list8.distinct)
+    println("Filter from list >2 "+list8.filter(ele => ele >2))
+    println("Filter from list >2 "+list8.filter(_>2))
+
+    val distList = list8.distinct
+
+    println(distList.map(ele => ele+1))
+    println(distList.map(ele => {
+      if(ele%2==0) ele * 10 else ele
+    }))
+
+    val name1 = List("SCALA","JAVA","SPARK","KAFKA","HIVE","MAPREDUCE")
+    println("flatten names  "+name1.flatten)
+    println("map func names  "+name1.map(ele => ele.toLowerCase))
+    println("flatmap names  "+name1.flatMap(ele => ele.toLowerCase))
+
+    println("fold "+ distList.foldLeft(0)(_+_))
+
+val l1 = List(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+    val l2 = List(2,4,6,8,10)
+    println(l1.zip(l2))//List((1,2), (2,4), (3,6), (4,8), (5,10))
+    println(l2.zip(l1))// List((2,1), (4,2), (6,3), (8,4), (10,5))
+
   }
 }

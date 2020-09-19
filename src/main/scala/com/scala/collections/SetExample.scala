@@ -24,6 +24,7 @@ val eName = name
     val state = Seq(eName, eAge, eId, eSal)
     state.map(_.hashCode()).foldLeft(0)((a, b) => 31 * a + b)
   }
+
 }
 
 object SetExample {
@@ -223,6 +224,31 @@ scala> s1+=(12,15)
 res36: scala.collection.mutable.Set[Int] = Set(15, 12, 9, 1, 5, 2, 6, 3, 10, 7, 4, 11, 8)
 
 scala>
+
+scala> import scala.collection.immutable._
+import scala.collection.immutable._
+
+scala> val set1 = HashSet(1,2,3,4,5,6,7,8,5,9,10,6,1,2,4)
+set1: scala.collection.immutable.HashSet[Int] = Set(5, 10, 1, 6, 9, 2, 7, 3, 8, 4)
+
+scala> val set1 = ListSet(1,2,3,4,5,6,7,8,5,9,10,6,1,2,4)
+set1: scala.collection.immutable.ListSet[Int] = ListSet(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+
+scala> val set1 = ListSet(34,2,31,56,23,12,55,23,31)
+set1: scala.collection.immutable.ListSet[Int] = ListSet(34, 2, 31, 56, 23, 12, 55)
+
+scala> val set1 = TreeSet(34,2,31,56,23,12,55,23,31)
+set1: scala.collection.immutable.TreeSet[Int] = TreeSet(2, 12, 23, 31, 34, 55, 56)
+
+scala> val set1 = HashSet(1,2,3,4,5,6,7,8,5,9,10,6,1,2,4,null)
+set1: scala.collection.immutable.HashSet[Any] = Set(null, 5, 10, 1, 6, 9, 2, 7, 3, 8, 4)
+
+scala> val set1 = ListSet(34,2,31,56,23,12,55,23,31,null)
+set1: scala.collection.immutable.ListSet[Any] = ListSet(34, 2, 31, 56, 23, 12, 55, null)
+
+scala> val set1 = TreeSet(34,2,31,56,23,12,55,23,31,null)
+<console>:14: error: No implicit Ordering defined for Any.
+       val set1 = TreeSet(34,2,31,56,23,12,55,23,31,null)
      */
   }
 }

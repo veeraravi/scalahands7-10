@@ -1,7 +1,12 @@
 package com.scala.collections
-
-import scala.collection.mutable
 import scala.collection.mutable.ListBuffer
+
+
+/**
+  * 789
+  * 7+8+9 = 24
+  * 2+4 = 6
+  * 6*/
 
 object ListTest {
   def main(args: Array[String]): Unit = {
@@ -79,7 +84,7 @@ object ListTest {
     println(lb)
     
     
-    mutable.TreeSet
+   // mutable.TreeSet
     
   }
 }
