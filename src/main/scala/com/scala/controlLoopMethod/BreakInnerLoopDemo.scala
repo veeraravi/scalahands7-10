@@ -1,4 +1,4 @@
-package com.scala.firstsession
+package com.scala.controlLoopMethod
 
 import scala.util.control.Breaks._
 

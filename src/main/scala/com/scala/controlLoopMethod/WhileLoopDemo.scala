@@ -1,14 +1,13 @@
-package com.scala.firstsession
-
+package com.scala.controlLoopMethod
 object WhileLoopDemo {
   def main(args:Array[String]){
 
-    var i = 0
+    var i = 100
 
-    while(i<=10){
+    while(i%5==0 || i >= 0){
       println(i)
       println("While Demo")
-    i = i + 1
+     i = i - 1
     }
 
     /*while(true){

@@ -1,4 +1,4 @@
-package com.scala.firstsession
+package com.scala.controlLoopMethod
 
 class AccessModifiers1{
   private var accessSal:Double = 1000.00;

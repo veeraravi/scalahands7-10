@@ -1,11 +1,17 @@
-package com.scala.firstsession
+package com.scala.controlLoopMethod
 
 object ForLoopDemo {
   var name:String = "SCALA";
   def main(args: Array[String]): Unit = {
-    /*for(initialize;condition;incr/decr){
+    /*
+      java/c/c++ syntax
+    for(initialize;condition;incr/decr){
 
-    }*/
+    }
+    scala
+    for(x <- range){
+    }
+    */
     println("++++++++++++++++++++++++++++++++")
     for(x <- 1 to 10){
       println("X value "+x)
@@ -21,6 +27,7 @@ object ForLoopDemo {
 
     for(i <- list){
       println("I am iterating LIST "+i)
+
     }
     println("============foreach=========== ")
     
@@ -32,7 +39,7 @@ object ForLoopDemo {
       println("===========1 to 10 by 2============")
       // odd numbers
       for(x <- 1 to 10 by 2){
-        println(x)
+        println("  X value == "+x)
         }
      // by 5
      println("==========DIVISIBLE BY 2=============")
@@ -41,13 +48,14 @@ object ForLoopDemo {
        println(x)
      }
      var count:Int = 0
-     val num = 10
+    val num = 10
 
     for(i <- 1 to num if( num%i == 0)){
       count=count+1
     }
     if(count>2) println("Not Prime") else println("Prime")
-      
+
+
     println("==========Nested For loop=============")
 
     for(x <- 1 to 5;

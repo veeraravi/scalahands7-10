@@ -1,4 +1,4 @@
-package com.scala.firstsession
+package com.scala.controlLoopMethod
 
 
 class Employee{
@@ -8,7 +8,7 @@ object IfElseDemo {
  def main(args: Array[String]){
    
   //var age = readInt();
-   var age = 24;
+   var age:Int = 24;
   
   if(age >= 18){
     println("Go for vote")
@@ -42,7 +42,8 @@ else if(number>=90 && number<=100){
 else println ("Invalid") 
 
 println(getSal())
- } 
+ }
+
  def getSal():Double = {
  val x = 100;
  val y = 2000;

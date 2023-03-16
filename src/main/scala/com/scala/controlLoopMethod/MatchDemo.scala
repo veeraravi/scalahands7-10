@@ -1,4 +1,4 @@
-package com.scala.firstsession
+package com.scala.controlLoopMethod
 
 class Emp {
 
@@ -49,7 +49,7 @@ println("====================1=================")
       case d: Double  =>  "I am Double"
       case s: String  =>  "I am String"
       case b: Boolean => "I am Boolean"
-      case b: Boolean => "I am boolean"
+      //case b: Boolean => "I am boolean"
       case _: Any => "I am Any type"
     }
 

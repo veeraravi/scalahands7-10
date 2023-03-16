@@ -1,4 +1,4 @@
-package com.scala.firstsession
+package com.scala.controlLoopMethod
 
 object PatternMatchDemo2 {
   def main(args: Array[String]): Unit = {
